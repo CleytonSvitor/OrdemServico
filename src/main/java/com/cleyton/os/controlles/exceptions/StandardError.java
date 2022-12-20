@@ -3,7 +3,6 @@ package com.cleyton.os.controlles.exceptions;
 import java.io.Serializable;
 
 import org.springframework.stereotype.Service;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

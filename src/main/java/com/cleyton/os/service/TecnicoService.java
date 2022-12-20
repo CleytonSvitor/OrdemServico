@@ -11,6 +11,7 @@ import com.cleyton.os.service.exceptions.ObjectNotFoundException;
 
 @Service
 public class TecnicoService {
+	
 
 	@Autowired
 	private TecnicoRepository tecnicoRepository;

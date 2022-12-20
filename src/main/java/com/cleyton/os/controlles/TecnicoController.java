@@ -22,7 +22,6 @@ public class TecnicoController {
 	public ResponseEntity<TecnicoDTO> findById(@PathVariable Integer id){
 		Tecnico obj = tecnicoService.findById(id);
 		TecnicoDTO objDTO = new TecnicoDTO(obj);
-		return ResponseEntity.ok().body(objDTO);
-		
+		return ResponseEntity.ok().body(objDTO);		
 	}
 }
