@@ -1,7 +1,9 @@
 package com.cleyton.os.dtos;
 
 import java.io.Serializable;
+
 import org.hibernate.validator.constraints.br.CPF;
+
 import com.cleyton.os.model.Tecnico;
 
 import lombok.Getter;
@@ -14,7 +16,8 @@ public class TecnicoDTO implements Serializable {
 
 	private Integer id;
 	private String nome;
-
+	@CPF
+	private String cpf;
 	private String telefone;
 
 	public TecnicoDTO() {
@@ -23,9 +26,10 @@ public class TecnicoDTO implements Serializable {
 
 	public TecnicoDTO(Tecnico obj) {
 		super();
+		
 		this.id = obj.getId();
 		this.nome = obj.getNome();
-
+		this.cpf = obj.getCpf(); 
 		this.telefone = obj.getTelefone();
 	}
 
