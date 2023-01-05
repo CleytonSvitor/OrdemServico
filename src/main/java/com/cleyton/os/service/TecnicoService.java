@@ -33,4 +33,6 @@ public class TecnicoService {
 				new Tecnico(null, objDTO.getNome(), objDTO.getCpf(), objDTO.getTelefone())
 				);
 	}
+	
+	
 }

@@ -40,7 +40,6 @@ public class TecnicoController {
 		for (Tecnico obj : list) {
 			listDTO.add(new TecnicoDTO(obj));
 		}
-
 		return ResponseEntity.ok().body(listDTO);
 	}
 	
